@@ -1,0 +1,569 @@
+================================================================================
+ UBUNTU PAWS ANIMAL SHELTER — WEBSITE SOURCE CODE
+ WEDE5020 (Web Development – Introduction) | Formative 1 — Part 1
+ Student: Onkokeditse Motsepe | Lecturer: Z. Wellcome
+================================================================================
+
+ HOW TO USE THIS FILE
+ --------------------
+ Each section below is one file in the project. Copy each section's code
+ into a new file with the exact filename shown in its header, and save it
+ in the folder structure described in Section 7 of the accompanying Word
+ document (index.html, about.html, services.html, enquiry.html, and
+ contact.html in the project root; style.css inside a "css" subfolder).
+
+ FOLDER STRUCTURE
+ ubuntu-paws-website/
+ |-- index.html
+ |-- about.html
+ |-- services.html
+ |-- enquiry.html
+ |-- contact.html
+ |-- css/
+ |   `-- style.css
+ |-- js/
+ |-- images/
+ `-- README.md
+
+================================================================================
+ FILE: index.html
+================================================================================
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubuntu Paws Animal Shelter | Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Site header with logo and main navigation -->
+    <header class="site-header">
+        <div class="logo">Ubuntu Paws</div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero section: first thing a visitor sees -->
+    <main>
+        <section class="hero">
+            <h1>Every Animal Deserves a Loving Home</h1>
+            <p>Ubuntu Paws rescues, rehabilitates, and rehomes abandoned and
+               abused animals across Johannesburg.</p>
+            <a href="enquiry.html" class="cta-button">Adopt / Volunteer / Donate</a>
+        </section>
+
+        <!-- Short introduction -->
+        <section class="intro">
+            <h2>Who We Are</h2>
+            <p>For four years, Ubuntu Paws has given vulnerable cats and dogs
+               a second chance at life through rescue, veterinary care, and
+               responsible rehoming within our community.</p>
+        </section>
+
+        <!-- Quick-link cards to key actions -->
+        <section class="card-grid">
+            <div class="card">
+                <h3>Adopt</h3>
+                <p>Meet the animals currently looking for their forever home.</p>
+            </div>
+            <div class="card">
+                <h3>Volunteer</h3>
+                <p>Give your time to help care for and socialise our animals.</p>
+            </div>
+            <div class="card">
+                <h3>Sponsor</h3>
+                <p>Support an animal's care as a monthly or once-off sponsor.</p>
+            </div>
+            <div class="card">
+                <h3>Donate</h3>
+                <p>Every contribution helps cover food, shelter, and vet bills.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Site footer, repeated on every page -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Ubuntu Paws Animal Shelter. All rights reserved.</p>
+        <p>Shelter Location 1: 12 Rescue Road, Johannesburg |
+           Shelter Location 2: 45 Hope Street, Soweto</p>
+    </footer>
+
+</body>
+</html>
+
+
+================================================================================
+ FILE: about.html
+================================================================================
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubuntu Paws Animal Shelter | About Us</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="logo">Ubuntu Paws</div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-intro">
+            <h1>About Ubuntu Paws</h1>
+            <p>Our story, our mission, and the people behind the shelter.</p>
+        </section>
+
+        <section class="history">
+            <h2>Our History</h2>
+            <p>Ubuntu Paws was founded four years ago by a small group of
+               volunteers who could not turn away an injured stray. What
+               began as informal foster care has grown into a community-run
+               shelter that has rescued hundreds of animals.</p>
+        </section>
+
+        <section class="mission-vision">
+            <h2>Mission</h2>
+            <p>To rescue vulnerable animals, provide them with veterinary
+               care and shelter, and place them in loving, permanent homes.</p>
+
+            <h2>Vision</h2>
+            <p>A community in which no companion animal is abandoned,
+               neglected, or without a home.</p>
+        </section>
+
+        <section class="team">
+            <h2>Our Team</h2>
+            <ul>
+                <li><strong>Shelter Manager</strong> – oversees daily
+                    operations and animal welfare.</li>
+                <li><strong>Volunteer Coordinator</strong> – manages the
+                    volunteer roster and onboarding.</li>
+                <li><strong>Veterinary Liaison</strong> – arranges medical
+                    care and vaccinations.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Ubuntu Paws Animal Shelter. All rights reserved.</p>
+        <p>Shelter Location 1: 12 Rescue Road, Johannesburg |
+           Shelter Location 2: 45 Hope Street, Soweto</p>
+    </footer>
+
+</body>
+</html>
+
+
+================================================================================
+ FILE: services.html
+================================================================================
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubuntu Paws Animal Shelter | Services</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="logo">Ubuntu Paws</div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-intro">
+            <h1>Our Services</h1>
+            <p>What we do for the animals in our care and for our community.</p>
+        </section>
+
+        <section class="service-list">
+            <article class="service">
+                <h2>Animal Rescue</h2>
+                <p>We respond to reports of abandoned or injured animals and
+                   bring them into our care for assessment and treatment.</p>
+            </article>
+
+            <article class="service">
+                <h2>Rehabilitation</h2>
+                <p>Every rescued animal receives veterinary treatment,
+                   nutrition, and behavioural rehabilitation before being
+                   made available for adoption.</p>
+            </article>
+
+            <article class="service">
+                <h2>Adoption Process</h2>
+                <p>Prospective adopters complete an enquiry, meet the animal,
+                   and undergo a short home-suitability check before
+                   finalising the adoption.</p>
+            </article>
+
+            <article class="service">
+                <h2>Community Outreach</h2>
+                <p>We run regular education drives on responsible pet
+                   ownership, sterilisation, and animal welfare in the
+                   surrounding community.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Ubuntu Paws Animal Shelter. All rights reserved.</p>
+        <p>Shelter Location 1: 12 Rescue Road, Johannesburg |
+           Shelter Location 2: 45 Hope Street, Soweto</p>
+    </footer>
+
+</body>
+</html>
+
+
+================================================================================
+ FILE: enquiry.html
+================================================================================
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubuntu Paws Animal Shelter | Enquiry</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="logo">Ubuntu Paws</div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiry.html" class="active">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-intro">
+            <h1>Get In Touch</h1>
+            <p>Interested in adopting, volunteering, or becoming a sponsor?
+               Tell us more below.</p>
+        </section>
+
+        <!-- Enquiry form: covers adoption, volunteering, and sponsorship -->
+        <section class="enquiry-form">
+            <form action="#" method="post">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="enquiry-type">I am enquiring about:</label>
+                <select id="enquiry-type" name="enquiry-type">
+                    <option value="adoption">Adopting an Animal</option>
+                    <option value="volunteering">Volunteering</option>
+                    <option value="sponsorship">Becoming a Sponsor</option>
+                </select>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Submit Enquiry</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Ubuntu Paws Animal Shelter. All rights reserved.</p>
+        <p>Shelter Location 1: 12 Rescue Road, Johannesburg |
+           Shelter Location 2: 45 Hope Street, Soweto</p>
+    </footer>
+
+</body>
+</html>
+
+
+================================================================================
+ FILE: contact.html
+================================================================================
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubuntu Paws Animal Shelter | Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="logo">Ubuntu Paws</div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-intro">
+            <h1>Contact Us</h1>
+            <p>We have two locations — visit us or reach out below.</p>
+        </section>
+
+        <!-- Two physical locations, as required by the assignment brief -->
+        <section class="locations">
+            <div class="location">
+                <h2>Johannesburg Shelter</h2>
+                <p>12 Rescue Road, Johannesburg, 2001</p>
+                <p>Tel: 011 555 0101</p>
+            </div>
+            <div class="location">
+                <h2>Soweto Shelter</h2>
+                <p>45 Hope Street, Soweto, 1804</p>
+                <p>Tel: 011 555 0202</p>
+            </div>
+        </section>
+
+        <!-- Placeholder for an embedded map (to be added in Part 2/3) -->
+        <section class="map-placeholder">
+            <p>[ Map showing both shelter locations will be embedded here ]</p>
+        </section>
+
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="#" method="post">
+                <label for="c-name">Full Name</label>
+                <input type="text" id="c-name" name="c-name" required>
+
+                <label for="c-email">Email Address</label>
+                <input type="email" id="c-email" name="c-email" required>
+
+                <label for="c-message">Message</label>
+                <textarea id="c-message" name="c-message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Ubuntu Paws Animal Shelter. All rights reserved.</p>
+        <p>Shelter Location 1: 12 Rescue Road, Johannesburg |
+           Shelter Location 2: 45 Hope Street, Soweto</p>
+    </footer>
+
+</body>
+</html>
+
+
+================================================================================
+ FILE: css/style.css
+================================================================================
+
+/* ==========================================================================
+   Ubuntu Paws Animal Shelter — Base Stylesheet
+   Colour palette: forest green #2E7D32, warm amber #F4A261, off-white #FAFAF7
+   ========================================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #333333;
+    background-color: #FAFAF7;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #2E7D32;
+}
+
+/* ---- Header & navigation ---- */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #FFFFFF;
+    border-bottom: 3px solid #2E7D32;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #2E7D32;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: 600;
+}
+
+.main-nav a.active,
+.main-nav a:hover {
+    color: #F4A261;
+}
+
+/* ---- Hero section ---- */
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #DCEEDC;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.6rem;
+    background-color: #F4A261;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+/* ---- Card grid ---- */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.card {
+    background-color: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+/* ---- Generic content sections ---- */
+.page-intro, .intro, .history, .mission-vision, .team,
+.service-list, .enquiry-form, .contact-form, .locations, .map-placeholder {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.service {
+    margin-bottom: 1.5rem;
+}
+
+/* ---- Forms ---- */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    max-width: 500px;
+}
+
+form label {
+    font-weight: 600;
+}
+
+form input,
+form select,
+form textarea {
+    padding: 0.6rem;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+form button {
+    align-self: flex-start;
+    padding: 0.7rem 1.4rem;
+    background-color: #2E7D32;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* ---- Locations ---- */
+.locations {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.location {
+    flex: 1;
+    min-width: 220px;
+}
+
+.map-placeholder {
+    text-align: center;
+    color: #777777;
+    font-style: italic;
+}
+
+/* ---- Footer ---- */
+.site-footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #1A1A1A;
+    color: #FFFFFF;
+    font-size: 0.85rem;
+    margin-top: 2rem;
+}
+
+================================================================================
+ END OF CODE FILE
+================================================================================
